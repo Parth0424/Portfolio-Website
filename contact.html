@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         .header
+            {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .list li
+            {
+                display: inline;
+                list-style-type: none;
+                
+                
+            }
+
+            .list li a
+            {
+              text-decoration: none;
+              color: rgb(10, 10, 75);
+              font-size:25px;
+              font-weight: 500;
+              font-style: normal;
+              padding: 10px 20px;
+              transition: 1s;
+    
+            }
+
+            .list li a:hover  
+            {
+                background: white;
+                color: rgb(108, 108, 219) ;
+                letter-spacing: 0.1em;
+            }
+            
+            .header
+            {
+                background-image: url(websitebackground.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-bottom: 3px solid rgb(10, 10, 75);
+                position: relative;
+            }
+
+            *
+            {
+                margin: 0%;
+                padding: 0%;
+
+            }
+            
+            .list
+            {
+                padding-top: 2%;
+                padding-right: 1%;
+                color: rgb(10, 10, 75);
+            }
+
+            .header1 img
+            { 
+               width: 2cm;
+               height: 2cm;
+               float: left;
+               padding-left: 25%;
+               padding-top: 15%;   
+               
+            }
+            .text1{
+                text-align: center;
+            }
+         
+            .underline{
+                text-align: center;
+                color: rgb(10, 10, 75);
+                font-size: 7mm;
+            }
+            .text1{
+                text-align: center;
+            }
+            .text2{
+                font-size: 6mm;
+            }
+           
+           
+           
+            
+            .block{
+                background-color: #99dd9b;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 190mm;
+  cursor: pointer;
+
+                
+            }
+            .block:hover{
+                background-color: #30a134;
+            }
+            .text5{
+                display: flex;
+                justify-content: space-between;
+                background-color: rgb(186, 186, 229)  ;
+                padding-left: 45mm;
+                padding-right: 45mm;
+            }
+            .text5 img{
+                width: 8cm;
+                height: 6cm;
+            }
+           
+            .text6{
+                text-align: center;
+                font-size: 6mm;
+                background-color: rgb(241, 217, 127);
+            }
+            .footer{
+                display: flex;
+                justify-content: space-between;
+                padding-left: 60mm;
+                padding-right: 60mm;
+                list-style: none;
+                text-align: left;
+                background-color: rgb(181, 204, 245);
+            }
+            .footer li a{
+                text-decoration: none;
+                transition: 1s;
+            }
+            .footer li a:hover{
+                letter-spacing: 0.1em;
+                font-size: 5mm;
+            }
+            .text13{
+                text-align: center;
+            }
+            .text13 p{
+                color: rgb(10, 10, 75);;      
+            
+            }
+           
+            .footer a{
+                color: rgb(10, 10, 75);
+            
+            }
+            .footer a:hover{
+                letter-spacing: 0.2em;     
+                
+            }
+            .text14 a{
+                color: rgb(10, 10, 75);;      
+            }
+            .text14 a:hover{
+                
+                font-size: 5mm;
+               
+            }
+            .text14 b{
+                color: rgb(10, 10, 75);
+            }
+            .form-content {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+.form-content input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px #888 solid;
+
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #444;
+}
+
+.form-content input:focus,
+.form-content input:valid {
+  outline: 0;
+  border-bottom: #222 1.5px solid;
+}
+
+.form-content label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.form-content label span {
+  display: inline-block;
+  font-size: 16px;
+  min-width: 5px;
+  /* transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+  transition: 0.09s ease;
+}
+.form-content input:focus + label span,
+.form-content input:valid + label span {
+  color: #444;
+  transform: translateY(-30px);
+}
+.text-fields {
+    display: grid;
+    grid-template-areas:
+        "name email"
+        "subject phone"
+        "message message";
+    grid-gap: 1.2rem;
+    margin-bottom: 1rem;
+    padding-left: 5cm;
+    margin-right: 5cm;
+    
+}
+
+            
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+      
+        <div class="header1">
+           
+           <img src="logo1.png"alt="logo1">
+        </div>
+        <div class="list">
+            <ul>
+                <li> 
+                    <a href="index1.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html"> About</a>
+                </li>
+                <li>
+                    <a href="activity.html"> Activities</a>
+                </li>
+                <li>
+                    <a href="blog.html"> Blog</a>
+                </li>
+                <li>
+                    <a href="project.html"> Project</a>
+                   </li>
+                <li>
+                    <a href="contact.html"> Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+        </div>
+        <div class="text1"><br><br><br>
+            <div>
+             <h1>CONTACT ME</h1>
+            </div>
+            <div class="underline">
+                <b>_______</b>
+            </div>
+            <br>
+            <div class="text2">
+            <p>Here is how you can reach me</p>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="text-fields">
+            <div class="form-content">
+                <input type="text" class="text-input name-input" pattern="[a-zA-Z].{2,}" title="Must be alphbets only,minimum 3 " required="">
+                <label><span style="transition-delay:0ms">N</span><span style="transition-delay:80ms">a</span><span style="transition-delay:160ms">m</span><span style="transition-delay:240ms">e</span></label>
+            </div>
+            <div class="form-content">
+
+                <input type="text" class="text-input subject-input" required="">
+                <label><span style="transition-delay:0ms">S</span><span style="transition-delay:80ms">u</span><span style="transition-delay:160ms">b</span><span style="transition-delay:240ms">j</span><span style="transition-delay:320ms">e</span><span style="transition-delay:400ms">c</span><span style="transition-delay:480ms">t</span></label>
+            </div>
+            <div class="form-content">
+
+                <input type="email" class="text-input email-input" title="Email format must be ___@___.__" required="">
+                    <!-- pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" -->
+                <label><span style="transition-delay:0ms">E</span><span style="transition-delay:80ms">m</span><span style="transition-delay:160ms">a</span><span style="transition-delay:240ms">i</span><span style="transition-delay:320ms">l</span></label>
+            </div>
+            <div class="form-content">
+
+                <input type="text" class="text-input phone-input" title="Exactly 10 digits  " required="">
+                    <!-- pattern="[0-9]{10,10}" -->
+                <label><span style="transition-delay:0ms">P</span><span style="transition-delay:80ms">h</span><span style="transition-delay:160ms">o</span><span style="transition-delay:240ms">n</span><span style="transition-delay:320ms">e</span><span style="transition-delay:400ms"> </span><span style="transition-delay:480ms">N</span><span style="transition-delay:560ms">o</span></label>
+            </div>
+
+            <div class="text4">
+                <textarea name="ENTER TEXT" id="" cols="120" rows="7" placeholder="ENTER TEXT"></textarea>
+            </div>
+            <br><br>
+            <button type="button" class="block">SUBMIT</button>
+            <br><br><br>
+
+        </div>
+        
+           
+        
+        
+        <div class="text5">
+            <div><br><br>
+                <i class="fa-solid fa-location-dot fa-3x"></i>
+                <h1>
+                    ADDRESS
+                </h1>
+                <p>20, Tirupati Bunglows, Gayatrimandir Road,</p> 
+                <p>Mahavirnagar,Himatnagar,</p><p>Gujarat,383001</p>
+            </div>
+            <div>
+                <br><br>
+             <a href="https://www.google.co.in/maps/place/Tirupati+Bunglows/@23.5968569,72.9744267,16z/data=!4m5!3m4!1s0x395db8c63bc15f25:0x698a90915d4187c!8m2!3d23.5964793!4d72.9804504?hl=en"target="_blank"><img src="my home.jpg"></a>
+             <br><br>
+            </div>
+            
+        </div>
+        <div class="text6"><br><br><br>
+            <h1>Lets start your next Project</h1>
+            <br><br><br>
+        </div>
+        <div class="footer">
+            <div class="text13"><br><br>
+                <h1><u>Company</u></h1>
+                <br>
+                <p>20, Tirupati Bunglows, Gayatrimandir Road,</p> 
+                <p>Mahavirnagar,Himatnagar,</p><p>Gujarat,383001</p>
+            </div>
+            <div><br><br>
+                <h1><u>Navigate</u></h1>
+                <br>
+                
+                    <li> 
+                        <a href="index1.html">Home</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="about.html"> About</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="activity.html"> Activities</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="blog.html">Blog </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="project.html"> Project</a>
+                       </li>
+                    <br>
+                    <li>
+                        <a href="contact.html"> Contact</a>
+                    </li>
+                    <br><br><br><br><br>
+                    <b>Copyright © 2022 Reserved</b>
+                    <br><br>
+            </div>
+            <div class="text14"><br><br>
+                <h1><u>Follow Me</u></h1>
+                <br>
+                <a href="https://www.facebook.com/profile.php?id=100020713541031" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a> 
+                <a href="https://www.instagram.com/invites/contact/?i=1t9yw1xjgxvyi&utm_content=2njw795" target="_blank" ><i class="fa-brands fa-instagram-square fa-2x"></i></a>
+                 <a href="https://www.linkedin.com/in/parth-patel-09364b198" target="_blank" ><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                  <a href="https://twitter.com/Parthpa27108727?s=09" target="_blank" ><i class="fa-brands fa-twitter-square fa-2x"></i></a>
+                <br><br>
+                <a href="Email.html"> <i class="fa-solid fa-envelope fa-2x"></i></a>
+                <br><br>
+                <b>Gmail:ppd181817@gmail.com</b>   
+                <br><br>
+                <a href="phone.html"><i class="fa-solid fa-phone fa-2x"></i></a><br><br>
+                <b>phone:9773056424</b>
+               <br><br>
+        
+            </div>
+            
+            
+        </div>
+        <script>
+            const labels = document.querySelectorAll( "label" );
+    
+            labels.forEach( function( label ) {
+                label.innerHTML = label.innerText
+                    .split( "" )
+                    .map(function(letter, idx){
+                return `<span style='transition-delay:${idx * 80}ms'>${letter}</span>`
+            })
+                    .join( "" );
+            } );
+        </script>
+        
+    
+        
+</body>
+</html>

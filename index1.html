@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+        <style>
+            .header
+            {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .list li
+            {
+                display: inline;
+                list-style-type: none;
+                
+                
+            }
+
+            .list li a
+            {
+              text-decoration: none;
+              color: rgb(10, 10, 75);
+              font-size:25px;
+              font-weight: 500;
+              font-style: normal;
+              padding: 10px 20px;
+              transition: 1s;
+    
+            }
+
+            .list li a:hover  
+            {
+                background: white;
+                color: rgb(108, 108, 219) ;
+                letter-spacing: 0.1em;
+            }
+            
+            .header
+            {
+                background-image: url(websitebackground.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 100vh;
+                position: relative;
+            }
+
+            *
+            {
+                margin: 0%;
+                padding: 0%;
+
+            }
+            
+            .list
+            {
+                padding-top: 2%;
+                padding-right: 1%;
+                color: rgb(10, 10, 75);
+            }
+
+            .header1 img
+            { 
+               width: 2cm;
+               height: 2cm;
+               float: left;
+               padding-left: 25%;
+               padding-top: 15%;   
+               
+            }
+          
+            .welcome-text 
+            {
+                position: absolute;
+                text-align: center;
+                margin: 27% 41%;
+                color: rgb(10, 10, 75);
+            
+            }
+           
+
+            .welcome-text a 
+            {
+               border: 1px solid white;
+               padding: 10px 25px;
+               text-decoration: none;
+               font-size: 18px;
+               display: inline-block;
+               color:rgb(10, 10, 75);
+               background-color: white;
+            }
+
+            .welcome-text a:hover
+            {
+                background-color:  rgb(181, 204, 245);
+                color: rgb(108, 108, 219);
+            }
+
+            .para
+            {
+               text-decoration:underline; 
+                display:block;
+            }
+             
+            .hide
+            {
+                visibility: hidden;
+                
+            }
+            .text1{
+                text-align: center;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .underline{
+                text-align: center;
+                color: rgb(10, 10, 75);
+            }
+            .text2{
+                text-align:center ;
+                font-size: 30px;
+                font-family:'Times New Roman', Times, serif ;
+            }
+            .text3{
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                padding-left: 25mm;
+                padding-right: 25mm;
+                
+                
+            }
+            p{
+                text-align: center;
+                padding-left: 10mm;
+                padding-right: 10mm;
+            }
+            .text4{
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                padding-left: 25mm;
+                padding-right: 25mm;
+                
+            }
+            .text41{
+                background-color:  rgb(181, 204, 245);
+                width: 95mm;
+                height: 60mm;
+            }
+            .text42{
+                background-color: rgb(186, 186, 225);
+                width: 95mm;
+                height: 60mm;
+            }
+            .text5{
+                text-align: center;
+            }
+            .footer{
+                display: flex;
+                justify-content: space-between;
+                padding-left: 60mm;
+                padding-right: 60mm;
+                list-style: none;
+                text-align: left;
+                background-color: rgb(181, 204, 245);
+            }
+            .footer li a{
+                text-decoration: none;
+                transition: 1s;
+            }
+            .footer li a:hover{
+                letter-spacing: 0.1em;
+                font-size: 5mm;
+                
+            }
+            .text6{
+                text-align: center;
+            }
+            .text6 p{
+                color: rgb(10, 10, 75);;      
+            
+            }
+           
+            .footer a{
+                color: rgb(10, 10, 75);
+            
+            }
+            .footer a:hover{
+                letter-spacing: 0.2em;     
+                
+            }
+            .text7 a{
+                color: rgb(10, 10, 75);;      
+            }
+            .text7 a:hover{
+                
+                font-size: 5mm;
+               
+            }
+            .text7 b{
+                color: rgb(10, 10, 75);
+            }
+            .icons{
+                border-radius: 50%;
+                height: 70px;
+                width: 70px;
+               
+                line-height: 70px;
+            }
+            .icons:hover{
+                border-radius: 50%;
+                height: 90px;
+                width: 90px;
+                background-color: rgb(10, 10, 75);
+                line-height: 90px;
+                transition: all 1s;
+            }
+            
+        </style>
+    
+</head>
+<body>
+     <div class="header">
+      
+        <div class="header1">
+           
+           <img src="logo1.png"alt="logo1">
+        </div>
+        <div class="list">
+            <ul>
+                <li> 
+                    <a href="index1.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html"> About</a>
+                </li>
+                <li>
+                    <a href="activity.html"> Activities</a>
+                </li>
+                <li>
+                    <a href="blog.html"> Blog</a>
+                </li>
+                <li>
+                     <a href="project.html"> Project</a>
+                    </li>
+                <li>
+                    <a href="contact.html"> Contact</a>
+                </li>
+               
+                
+
+            </ul>
+
+        </div>
+
+           <div class="welcome-text"> 
+
+            <h1> I Am Parth</h1>
+            <br>
+            <br>
+            <h2 class="para">
+                What I Am Expertise In? 
+            </h2>
+            <br>
+            <h3 class="hide"> UI/UX, Javascript, ReactJS </h3>
+
+            <br>
+             <a href="activity.html" class="mywork"> View My Work </a>
+             
+            </div>
+     </div>
+       <br><br>
+ <div>
+    <div class="text1"> 
+        <h1>I SPECIALISE IN</h1>
+    </div>
+    <div class="underline">
+        <h1>____________</h1>
+    </div>
+    <br>
+    <br>
+    <div class="text2">
+        <p> UI/UX layout websites, reactJS as well as content writting.</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="text3">
+    <div>
+        <i class="fa-solid fa-laptop-code fa-3x icons " style=" color: rgb(108, 108, 219);"></i>
+        <br>
+        <h1>Web Devlopment</h1>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et modi necessitatibus beatae voluptas assumenda soluta aliquid quo tempora natus eius!</p>
+    </div>
+    <div>
+        <i class="fa-solid fa-angles-up fa-3x icons "  style=" color: rgb(108, 108, 219);"></i>
+        <br>
+        <h1>Front End Devlopment</h1>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et modi necessitatibus beatae voluptas assumenda soluta aliquid quo tempora natus eius!</p>
+    </div>
+    <div>
+        <i class="fa-solid fa-object-group fa-3x icons"  style=" color: rgb(108, 108, 219);"></i>
+        <br>
+        <h1>Design</h1>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et modi necessitatibus beatae voluptas assumenda soluta aliquid quo tempora natus eius!</p>
+    </div>
+    <div>
+        <i class="fa-solid fa-comment fa-3x icons" style=" color: rgb(108, 108, 219);"></i>
+        <br>
+        <h1>Interaction</h1>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et modi necessitatibus beatae voluptas assumenda soluta aliquid quo tempora natus eius!</p>
+    </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br><br><br>
+<div class="text4">
+    <div class="text42"><br><br><br>
+        <i class="fa-solid fa-address-book fa-3x"></i>
+        <br>
+        <h1> Client </h1>
+        <br>
+        <h1>99</h1>
+    </div>
+    <div class="text41"><br><br><br>
+        
+        <i class="fa-solid fa-medal fa-3x"></i>
+        <h1>Awards</h1>
+        <br>
+        <h1>8</h1>
+    </div>
+    <div class="text42"><br><br><br>
+        <i class="fa-solid fa-hourglass fa-3x"></i>
+        <br>
+        <h1>Hours Work</h1>
+        <br>
+        <h1>3000</h1>
+    </div>
+    <div class="text41"><br><br><br>
+        <i class="fa-solid fa-diagram-project fa-3x"></i>
+        <br>
+        <h1>Project Done</h1>
+        <br>
+        <h1>120</h1>
+    </div>
+</div>
+<br><br>
+<div>
+<div class="text5">
+    <h1>MY CREATIVE PROCESS</h1>
+</div>
+<div class="underline">
+    <h1>____________</h1>
+</div>
+<br><br>
+<div class="text2">
+    <p>All of my UI/UX design projects are based off of a practiced formula to get the result that I am looking for.</p>
+</div>
+<br><br><br><br>
+<div class="text3">
+<div>
+    <i class="fa-regular fa-file-code fa-3x icons" style=" color: rgb(108, 108, 219);"></i>
+    <br>
+    <h1>Discuss The Project</h1>
+    <br>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique voluptatum quaerat, ipsa fugiat eveniet quasi?</p>
+</div>
+<div>
+    <i class="fa-solid fa-laptop fa-3x icons"style=" color: rgb(108, 108, 219);"></i>
+    <br>
+    <h1>Concept</h1>
+    <br>
+    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique voluptatum quaerat, ipsa fugiat eveniet quasi?</P>
+</div>
+<div>
+    <i class="fa-solid fa-clipboard fa-3x icons"style=" color: rgb(108, 108, 219);"></i>
+    <br>
+    <h1>planning</h1>
+    <br>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique voluptatum quaerat, ipsa fugiat eveniet quasi?</p>
+</div>
+<div>
+    <i class="fa-solid fa-comment fa-3x icons"style=" color: rgb(108, 108, 219);"></i>
+    <br>
+    <h1>Interaction</h1>
+    <br>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique voluptatum quaerat, ipsa fugiat eveniet quasi?</p>
+</div>
+</div>
+<br><br><br>
+<div class="footer">
+    <div class="text6"><br><br>
+        <h1><u>Company</u></h1>
+        <br>
+        <p>20, Tirupati Bunglows, Gayatrimandir Road,</p> 
+        <p>Mahavirnagar,Himatnagar,</p><p>Gujarat,383001</p>
+    </div>
+    <div><br><br>
+        <h1><u>Navigate</u></h1>
+        <br>
+        
+            <li> 
+                <a href="index1.html">Home</a>
+            </li>
+            <br>
+            <li>
+                <a href="about.html"> About</a>
+            </li>
+            <br>
+            <li>
+                <a href="activity.html"> Activities</a>
+            </li>
+            <br>
+            <li>
+                <a href="blog.html">Blog </a>
+            </li>
+            <br>
+            <li>
+                <a href="project.html"> Project</a>
+               </li>
+            <br>
+            <li>
+                <a href="contact.html"> Contact</a>
+            </li>
+            <br><br><br><br><br>
+            <b>Copyright © 2022 Reserved</b>
+            <br><br>
+    </div>
+    <div class="text7"><br><br>
+        <h1><u>Follow Me</u></h1>
+        <br>
+        <a href="https://www.facebook.com/profile.php?id=100020713541031" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a> <a href="https://www.instagram.com/invites/contact/?i=1t9yw1xjgxvyi&utm_content=2njw795" target="_blank" ><i class="fa-brands fa-instagram-square fa-2x"></i></a> <a href="https://www.linkedin.com/in/parth-patel-09364b198" target="_blank" ><i class="fa-brands fa-linkedin fa-2x"></i></a> <a href="https://twitter.com/Parthpa27108727?s=09" target="_blank" ><i class="fa-brands fa-twitter-square fa-2x"></i></a>
+        <br><br>
+        <a href="Email.html"> <i class="fa-solid fa-envelope fa-2x"></i></a>
+        <br><br>
+        <b>Gmail:ppd181817@gmail.com</b>   
+        <br><br>
+        <a href="phone.html"><i class="fa-solid fa-phone fa-2x"></i></a><br><br>
+        <b>phone:9773056424</b>
+       <br><br>
+
+    </div>
+    
+    
+</div>
+
+</body>
+</html>

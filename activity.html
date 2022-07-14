@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         .header
+            {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .list li
+            {
+                display: inline;
+                list-style-type: none;
+                
+                
+            }
+
+            .list li a
+            {
+              text-decoration: none;
+              color: rgb(10, 10, 75);
+              font-size:25px;
+              font-weight: 500;
+              font-style: normal;
+              padding: 10px 20px;
+              transition: 1s;
+    
+            }
+
+            .list li a:hover  
+            {
+                background: white;
+                color: rgb(108, 108, 219) ;
+                letter-spacing: 0.1em;
+            }
+            
+            .header
+            {
+                background-image: url(websitebackground.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-bottom: 3px solid rgb(10, 10, 75);
+                position: relative;
+            }
+
+            *
+            {
+                margin: 0%;
+                padding: 0%;
+
+            }
+            
+            .list
+            {
+                padding-top: 2%;
+                padding-right: 1%;
+                color: rgb(10, 10, 75);
+            }
+
+            .header1 img
+            { 
+               width: 2cm;
+               height: 2cm;
+               float: left;
+               padding-left: 25%;
+               padding-top: 15%;   
+               
+            }
+            .layout1{
+            background-color: rgb(240, 229, 216);
+        }
+
+        .heading1 {
+            text-align: center;
+            background-color: rgb(181, 204, 245);
+            margin-left: 10cm;
+            margin-right: 10cm;
+            color: black;
+        }
+        table{
+            text-align: center;
+            margin-left: 5mm;
+            margin-right: 5mm;
+        }
+        table, th,td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.heading2 {
+            text-align: center;
+            background-color: rgb(181, 204, 245);
+            margin-left: 10cm;
+            margin-right: 10cm;
+            color: black;
+        }
+        .footer{
+                display: flex;
+                justify-content: space-between;
+                padding-left: 60mm;
+                padding-right: 60mm;
+                list-style: none;
+                text-align: left;
+                background-color: rgb(181, 204, 245);
+            
+            }
+            .footer li a{
+                text-decoration: none;
+                transition: 1s;
+            }
+            .footer li a:hover{
+                letter-spacing: 0.1em;
+                font-size: 5mm;
+            }
+            .text13{
+                text-align: center;
+            }
+            .text13 p{
+                color: rgb(10, 10, 75);;      
+            
+            }
+           
+            .footer a{
+                color: rgb(10, 10, 75);
+            
+            }
+            .footer a:hover{
+                letter-spacing: 0.2em;     
+                
+            }
+            .text14 a{
+                color: rgb(10, 10, 75);;      
+            }
+            .text14 a:hover{
+                
+                font-size: 5mm;
+               
+            }
+            .text14 b{
+                color: rgb(10, 10, 75);
+            }
+            .photo{
+                display: flex;
+                justify-content: space-between;
+                padding-left: 25mm;
+                padding-right: 37mm;
+                text-align: left;
+
+                
+                
+            }
+            .photo img{
+                border-radius: 50%;
+                size: 10mm;
+                height: 1.5cm;
+                width: 1.5cm;
+                
+            }
+            #grid1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 8px;
+            height: 13cm;
+           
+            padding: 10px;
+        }
+
+        #grid1>div {
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 25px;
+        }
+
+        .item {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            width: 12cm;
+            height: 7cm;
+        }
+
+        .item::after {
+            content: "";
+            position: absolute;
+            display: block;
+            background: inherit;
+            background-color: rgb(90, 103, 225);
+            opacity: 0.9;
+            top: 0;
+            left: 0;
+            width: 150mm;
+            height: 150mm;
+            transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+            transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
+        }
+
+        .item1 {
+            display: block;
+            position: relative;
+            margin-left: 1cm;
+           
+        }
+
+        .item1 img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100mm;
+            height: 60mm;
+            line-height: 0;
+        }
+
+
+        .itemtext {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            text-align: center;
+            z-index: 1;
+            color: rgb(140, 167, 203);
+            transform: translateX(-20%);
+            transition-delay: 300ms;
+        }
+
+        .item:hover::after {
+            transform: scale(2) translateX(0%) translateY(0%) rotate(-28deg);
+        }
+
+        .item:hover .item1 {
+            transform: scale(1.2);
+            transition: all 1s;
+        }
+
+        .item:hover .itemtext {
+            opacity: 1;
+            transform: translateY(0);
+
+        }
+    
+ 
+
+        .text1 {
+
+
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            color: black;
+            font-size: 2rem;
+            padding: 0 1rem;
+            margin: 5px 0 0 0;
+
+        }
+        .hide-1{
+        display: none;
+       }
+      .space{
+        height: 13cm;
+      }
+           
+         
+    </style>
+</head>
+<body>
+    <div class="header">
+      
+        <div class="header1">
+           
+           <img src="logo1.png"alt="logo1">
+        </div>
+        <div class="list">
+            <ul>
+                <li> 
+                    <a href="index1.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html"> About</a>
+                </li>
+                <li>
+                    <a href="activity.html"> Activities</a>
+                </li>
+                <li>
+                    <a href="blog.html"> Blog</a>
+                </li>
+                <li>
+                    <a href="project.html"> Project</a>
+                   </li>
+                <li>
+                    <a href="contact.html"> Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+        </div>
+        <div id="grid1">
+
+            <div class="item">
+                <div class="item1"> <img src="c1.jpeg" alt=""></div>
+    
+                <div class="itemtext">
+                    <h4 class="text1"> certificate</h4>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item1"> <img src="c2.jpeg" alt=""></div>
+                <div class="itemtext">
+                    <h4 class="text1"> certificate </h4>
+                </div>
+            </div>
+            <div class="item">
+                    <div class="item1"> <img src="c3.jpeg" alt=""></div>
+                    <div class="itemtext">
+                        <h4 class="text1"> certificate </h4>
+                    </div>
+            </div>  
+                 
+            <div class="item">
+                   <div class="item1"> <img src="c4.jpeg" alt=""></div>
+                   <div class="itemtext">
+                            <h4 class="text1"> certificate </h4>
+                   </div>
+            </div>
+            <div class="item">
+                    <div class="item1"> <img src="c5.jpeg" alt=""></div>
+                    <div class="itemtext">
+                          <h4 class="text1"> certificate </h4>
+                    </div>
+            </div>
+            <div class="item">
+                    <div class="item1"> <img src="c6.jpeg" alt=""></div>
+                    <div class="itemtext">
+                               <h4 class="text1"> certificate </h4>
+                     </div>
+            </div>
+            <div class="item">
+                    <div class="item1"> <img src="c7.jpeg" alt=""></div>
+                    <div class="itemtext">
+                           <h4 class="text1"> certificate </h4>
+                    </div>
+            </div>
+                                   
+            <div class="item">
+                    <div class="item1"> <img src="c8.jpeg" alt=""></div>
+                    <div class="itemtext">
+                            <h4 class="text1"> certificate </h4>
+                    </div>
+            </div>
+            <div class="item">
+                    <div class="item1"> <img src="c9.jpeg" alt=""></div>
+                    <div class="itemtext">
+                              <h4 class="text1"> certificate </h4>
+                    </div>
+                
+            </div>
+        </div>
+
+        <div class="space">
+            
+        </div>
+    <div class="footer">
+        <div class="text13"><br><br>
+            <h1><u>Company</u></h1>
+            <br>
+            <p>20, Tirupati Bunglows, Gayatrimandir Road,</p> 
+            <p>Mahavirnagar,Himatnagar,</p><p>Gujarat,383001</p>
+        </div>
+        <div><br><br>
+            <h1><u>Navigate</u></h1>
+            <br>
+            
+                <li> 
+                    <a href="index1.html">Home</a>
+                </li>
+                <br>
+                <li>
+                    <a href="about.html"> About</a>
+                </li>
+                <br>
+                <li>
+                    <a href="activity.html"> Activities</a>
+                </li>
+                <br>
+                <li>
+                    <a href="blog.html">Blog </a>
+                </li>
+                <br>
+                <li>
+                    <a href="project.html"> Project</a>
+                   </li>
+                <br>
+                <li>
+                    <a href="contact.html"> Contact</a>
+                </li>
+                <br><br><br><br><br>
+                <b>Copyright © 2022 Reserved</b>
+                <br><br>
+        </div>
+        <div class="text14"><br><br>
+            <h1><u>Follow Me</u></h1>
+            <br>
+            <a href="https://www.facebook.com/profile.php?id=100020713541031" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a> <a href="https://www.instagram.com/invites/contact/?i=1t9yw1xjgxvyi&utm_content=2njw795" target="_blank" ><i class="fa-brands fa-instagram-square fa-2x"></i></a> <a href="https://www.linkedin.com/in/parth-patel-09364b198" target="_blank" ><i class="fa-brands fa-linkedin fa-2x"></i></a> <a href="https://twitter.com/Parthpa27108727?s=09" target="_blank" ><i class="fa-brands fa-twitter-square fa-2x"></i></a>
+            <br><br>
+            <a href="Email.html"> <i class="fa-solid fa-envelope fa-2x"></i></a>
+            <br><br>
+            <b>Gmail:ppd181817@gmail.com</b>   
+            <br><br>
+            <a href="phone.html"><i class="fa-solid fa-phone fa-2x"></i></a><br><br>
+            <b>phone:9773056424</b>
+           <br><br>
+    
+        </div>
+        
+        
+    </div>
+    <script>
+        const btn = document.querySelector('#btn-1');
+const text = document.querySelector('.show-1');
+btn.addEventListener('click', function(){
+      text.classList.toggle('hide-1')
+      btn.textContent == "Read More"
+      ? (btn.textContent = "Read Less"):(btn.textContent = "Read More");
+})
+    </script>
+        
+    
+        
+</body>
+</html>
